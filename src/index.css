@@ -1,3 +1,140 @@
-body {
-  font-size: 100px;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+  font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+body{
+  background-color: #ece3e3c6;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.nav h2{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 800;
+  color: darkgrey;
+}
+
+.nav button{
+  padding: 10px 20px;
+  border: 1px solid darkgray;
+  background-color: darkgrey;
+  color: white;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.summary{
+  text-align: center;
+  padding: 20px 10px;
+}
+.summary p{
+  color: dimgray;
+  font-size: 19px;
+}
+.bbody{
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.card{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 20px 0;
+  border: 2px solid darkgray;
+  border-radius: 8px;
+}
+.card-title{
+  font-size: 20px;
+  font-weight: 600;
+}
+.card-price{
+  font-weight: 700;
+}
+.card-button{
+  padding: 8px 8px;
+  border: 1px solid darkgray;
+  background-color: darkgrey;
+  color: white;
+  border-radius: 8px;
+  font-weight: 700;
+  
+}
+.card-input{
+  display: block;
+  width: 50px;
+  margin: 30px 0 10px 0;
+  border: 1px solid darkgray;
+  padding: 4px 2px;
+  font-size: 16px;
+}
+.card-input:focus{
+  border: 1px solid darkgray;
+  outline: none;
+}
+.main{
+  z-index: 10;
+}
+.backdrop{
+  width: 100vw;
+  height: 100vh;
+  background-color: #ece3e3c6 ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-box{
+  background-color: #ece3e3c6;
+  padding: 20px 80px;
+  box-shadow: 0 0 10px rgba(171, 224, 238, 0.138);
+  width: 80%;
+  z-index: 1000;
+  position: relative;
+  border-radius: 10px;
+}
+.cart{
+  padding: 20px 20px;
+}
+.total{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total p{
+  font-size: 20px;
+  font-weight: 800;
+}
+.btns{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.order-btn{
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid darkgray;
+  background-color: darkgrey;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+.close-btn{
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid darkgray;
+  background-color: transparent;
+  color: darkgray;
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 20px;
 }
